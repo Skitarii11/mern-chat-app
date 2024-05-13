@@ -1,5 +1,5 @@
 # MERN Chat App
-![mern-ui](./Capture.png)
+![mern-ui](./Capture.PNG)
 
 This is a full-stack chat application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). Users can sign up, log in, and chat in real-time with other users.
 
