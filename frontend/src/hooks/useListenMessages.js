@@ -14,14 +14,10 @@ const useListenMessages = () => {
 			newMessage.shouldShake = true;
 			const sound = new Audio(notificationSound);
 			sound.play();
-			if (check) {
-				setMessages([...messages, newMessage]);
-			}
+			setMessages([...messages, newMessage]);
 		});
 
-		return () => {
-			socket?.off("new-message");
-		};
+		return () => socket?.off("newMessage");
 	}, [socket, setMessages, messages]);
 };
 export default useListenMessages;
